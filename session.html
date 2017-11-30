@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!--FONTS-->
     <script src="https://use.fontawesome.com/ae8a5e6f8a.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lora|Montserrat" rel="stylesheet">
@@ -69,12 +70,229 @@
 	<!-- ONLY CHANGE CODE BETWEEN BELOW THIS COMMENT. IF YOU ARE CHANGING ANYTHING IN HEADER OR FOOTER DO IT IN THE INDEX.HTML TEMPLATE FILE. -->
 	<!-- ******************************************************************************************************************************** -->
 
-	<section role="main" class="main-content container">
-      	<div class="mt-3">
-        	<h1>Propose a Session</h1>
-      	</div>
-      	<p class="lead">
-		EMBED PROPOSAL A SESSION FORM HERE</p>
+{% extends "base.html" %}
+{% block content %}
+
+
+<!--CSS STYLE-->
+<link rel="stylesheet" href="./css/style.css">
+
+<style type="text/css">
+  .errormsg {
+  color: red;
+  font-size: .8em;
+  font-weight: bold;
+  font-family: arial;
+  text-decoration: underline;
+  display: none;   
+}
+.ie{
+  font-style:italic;
+  font-size:1em;
+}
+</style>
+
+<!--JS FUNCTIONS-->
+<script type="text/javascript">
+  function checkForm() {
+  
+  var fname = document.getElementById('fname');
+  var lname = document.getElementById('lname');
+  var sname = document.getElementById('sname');
+  var dname = document.getElementById('dname');
+  var title = document.getElementById('title');
+  var sess = document.getElementById('sess');
+  var nsess = sess.value.length;
+  
+if (fname.value == "")
+    { document.getElementById('fnerror').style.display =     "initial"
+    var fname_valid = 0;}
+  else if (fname.value != "")
+    { document.getElementById('fnerror').style.display =     "none"
+    var fname_valid = 1;}
+  
+if (lname.value == "")
+    { document.getElementById('lnerror').style.display =     "initial"
+    var lname_valid = 0;}
+  else if (lname.value != "")
+    { document.getElementById('lnerror').style.display =     "none"
+    var lname_valid = 1;}
+  
+if (sname.value == "")
+    { document.getElementById('snerror').style.display =     "initial"
+    var sname_valid = 0;}
+  else if (sname.value != "")
+    { document.getElementById('snerror').style.display =     "none"
+    var sname_valid = 1;}
+ 
+  if (dname.value == "")
+    { document.getElementById('dnerror').style.display =     "initial"
+    var dname_valid = 0;}
+  else if (dname.value != "")
+    { document.getElementById('dnerror').style.display =     "none"
+    var dname_valid = 1;}
+  
+  if (title.value == "")
+    { document.getElementById('titleerror').style.display =     "initial"
+    var title_valid = 0;}
+  else if (title.value != "")
+    { document.getElementById('titleerror').style.display =     "none"
+    var title_valid = 1;}
+  
+  if (nsess <= 99)
+    { document.getElementById('sesherror').style.display =     "initial"
+    var sess_valid = 0;}
+  else if (nsess >= 100)
+    { document.getElementById('sesherror').style.display =     "none"
+    var sess_valid = 1;}
+  
+  var light = document.getElementById('lightning')
+  var demo = document.getElementById('demo')
+  var panel = document.getElementById('panel')
+  var poster = document.getElementById('poster')
+  if (light.checked == false && demo.checked == false && panel.checked == false && poster.checked == false)
+    { document.getElementById('sesserror').style.display =     "initial"
+    var sesss_valid = 0;}
+  else 
+    { document.getElementById('sesserror').style.display =     "none"
+    var sesss_valid = 1;}
+  
+  var fac = document.getElementById('faculty')
+  var stu = document.getElementById('student')
+  var sta = document.getElementById('staff')
+  
+  if (fac.checked == false && stu.checked == false && sta.checked == false)
+    { document.getElementById('posierror').style.display =     "initial"
+    var posi_valid = 0;}
+  else 
+    { document.getElementById('posierror').style.display =     "none"
+    var posi_valid = 1;}
+  
+  
+  if (fname_valid && lname_valid && sname_valid && dname_valid && title_valid && sess_valid && sesss_valid && posi_valid == 1)
+    {
+      alert("Submitted")
+      return true;
+    }
+  else
+  {
+return false;
+}
+}
+
+</script>
+  <head>
+    <title>Propose a Session</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <h1> Propose Session Form </h1>
+   <form action="http://cnn.com" onsubmit="return checkForm();">
+  <fieldset>
+    <legend>Proposed Session</legend>
+    <p>
+      <label>
+        First Name:
+        <input type="text" name="fname" id="fname">
+      </label>
+    </p>
+    <p class="errormsg" id="fnerror">Please enter your first name above</p>
+     <p>
+      <label>
+        Last Name:
+        <input type="text" name="lname" id="lname">
+      </label>
+    </p>
+    <p class="errormsg" id="lnerror">Please enter your last name above</p>
+    <p>
+      <label>
+        School Name:
+        <input type="text" name="sname" id="sname">
+      </label>
+      <span class="ie"> (i.e. University of Michigan, etc...)
+    </p>
+    <p class="errormsg" id="snerror">Please enter your school above</p>
+    <p>
+      <label>
+        Department Name:
+        <input type="text" name="dname" id="dname">
+      </label>
+      <span class="ie"> (i.e. School of Information, etc...)
+    </p>
+    <p class="errormsg" id="dnerror">Please enter your department above</p>
+    <p>
+      <label>
+        Email:
+        <input type="email" name="email" id="email">
+      </label>
+      </p>
+    <p>
+       The Type of Session:
+ 
+      <label>
+        <input type="radio" value="lightning" name="sess" id="lightning">
+        Lightning Talk
+      </label>
+      <label>
+        <input type="radio" value="demo" name="sess" id="demo">
+        Demonstration
+      </label>
+      <label>
+        <input type="radio" value="panel" name="sess" id="panel">
+        Panel
+      </label>
+      <label>
+        <input type="radio" value="poster" name="sess" id="poster">
+        Poster
+      </label>
+    <p class="errormsg" id="sesserror">Please select a session type</p>
+    
+    <p>
+      <label>
+        Title:
+        <input type="text" name="title" id="title">
+      </label>
+      
+    </p>
+    <p class="errormsg" id="titleerror">Please enter the title of your session</p>
+    
+    <p>
+      <label>
+        Session Description:
+        <br>
+        <textarea rows="5" cols="50" id="sess" name="sess"></textarea>
+      </label>
+      
+    </p>
+    <p class="errormsg" id="sesherror">Please enter a longer description of your session (at least 100 characters) </p>
+    
+    <p>
+       Your position:
+       <label>
+        <input type="radio" value="faculty" name="posi" id="faculty">
+        Faculty
+      </label>
+      <label>
+        <input type="radio" value="student" name="posi" id="student">
+        Student
+      </label>
+      <label>
+        <input type="radio" value="staff" name="posi" id="staff">
+        Staff
+      </label>
+      
+    <p class="errormsg" id="posierror">Please select your position</p>
+    <p>
+    
+
+
+  <input type="submit" value="Submit"> 
+      </fieldset>
+</form>
+  </body>
+
+{% endblock %}
 
 	
     </section>
