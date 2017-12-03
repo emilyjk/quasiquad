@@ -79,9 +79,9 @@ header{
 	border-radius: 10px;
 	color: #FFFEFC;
 }
-.header-link:hover{
-	background-color: #FFFEFC;
-	border-color: #FFFEFC;
+.header-link:hover, .header-link:focus{
+	background-color: #66AB8C;
+	border-color: #66AB8C;
 	text-decoration: none;
 	color: #121820;
 }
@@ -98,11 +98,14 @@ header{
     color: rgba(255, 254, 252,.8);
 }
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255, 254, 252,.5);
+    color: rgba(255, 254, 252,.8);
 }
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #FFFEFC;
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:focus .nav-link {
+    color: #66AB8C;
+}
+.navbar-custom .nav-item.active .nav-link {
+    color: #FA7C92;
 }
 /*dropdown*/
 .navbar-custom .dropdown-menu {
@@ -114,14 +117,20 @@ header{
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
     color: #FFFEFC;
-    background-color: rgba(235, 239, 241,.5);
+    background-color: rgba(102, 171, 140,.5);
 }
 /*toggler icon*/
 .toggler-custom.navbar-toggler {
     border-color: #FFFEFC;
 }
 .toggler-custom .navbar-toggler-icon {
-  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 254, 252, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 254, 252, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.toggler-custom.navbar-toggler:hover {
+    border-color: #66AB8C;
+}
+.toggler-custom .navbar-toggler-icon:hover {
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102, 171, 140, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /*FOOTER*/
@@ -148,7 +157,7 @@ header{
     margin-bottom: -3em;
     padding-bottom: 3em;
 }
-.col-md-6.index, .col-md-12.about, .col-md-12.speakers, .col-md-6.location, .col-md-8.header{
+.col-md-6.index, .col-md-12.about, .col-md-12.speakers, .col-md-6.location, .col-md-8.header, .col-md-12.register, .col-md-4.volunteer, .col-md-12.schedule, .col-md-12.session{
 	margin-top: 3em;
 }
 /*homepage*/
@@ -185,12 +194,34 @@ header{
 .col-md-8.header{
 	padding-bottom: 2em;
 }
+/*volunteer*/
+.col-md-4.volunteer img{
+	height: 20em;
+}
+.list-item{
+ 	font-family: 'Open Sans', sans-serif;
+}
+/*contact*/
+.col-md-4.contact{
+	margin-top: -4em;
+}
+.col-md-4.contact img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 9em;
+}
+/*register*/
+.col-md-12.register{
+	padding-bottom: 1em;
+}
 
 #map {
         width: 100%;
         height: 400px;
-        background-color: grey;
+        background-color: #EBEFF1;
       }
+
 /*lightbox*/
 .ekko-lightbox-nav-overlay{
 	z-index:1;

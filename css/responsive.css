@@ -1,4 +1,5 @@
 @media only screen and (max-width: 768px){
+	/*homepage*/
 	.col-md-6.index{
 		padding: 0;
 		text-align: center;
@@ -12,6 +13,12 @@
 		border-top: 1px solid;
 		border-left: none;
 	}
+	/*location & schedule * session*/
+	.row.location, .col-md-12.schedule, .col-md-12.session{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	/*speakers*/
 	.circular-photo{
 		display: block;
     	margin-left: auto;
@@ -24,5 +31,30 @@
 	.col-md-4.speakers, .col-md-8.speakers{
 		padding-right: 2em;
 		padding-left: 2em;
+	}
+	/*volunteer*/
+	.col-md-8.volunteer{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	.col-md-4.volunteer{
+		margin-top: 1em;
+	}
+	.col-md-4.volunteer img{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	/*contact*/
+	.col-md-4.contact{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	.contact p.lead, .contact.header h2{
+		text-align: center;
+	}
+	.col-md-4.contact img{
+		margin-top: 2em;
+		margin-bottom: 1em;
 	}
 }
