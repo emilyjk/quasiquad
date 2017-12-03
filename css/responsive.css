@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px){
+	.col-md-6{
+		padding: 0;
+		text-align: center;
+		padding-bottom: 1.5em;
+		margin: 2em 2em 0;
+	}
+	.right-side{
+		margin-right: 2em;
+		margin-left: 2em;
+		padding-top: 2em;
+		border-top: 1px solid;
+		border-left: none;
+	}
+}
