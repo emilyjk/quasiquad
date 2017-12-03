@@ -72,32 +72,33 @@
 	<!-- ******************************************************************************************************************************** -->
 
 	<section role="main" class="main-content container">
-      	<h2>Location</h2>
-      	<p class="lead">QuasiCon 2018 will take place on Saturday, February 10, 2018 at the Rackham School of Graduate Studies located 915 E. Washington St on the University of Michigan campus.
-		LINK FOR MAP: https://maps.studentlife.umich.edu/building/horace-h-rackham-school-of-graduate-studies</p>
-		<h2>Parking</h2>
-		<p class="lead">We suggest that attendees park at the Liberty Square Parking Structure (510 E. Washington), a short walk to the Rackham Graduate Building (915 E. Washington Street). This lot charges a flat $3 exit fee for parking on Saturdays.</p>
-		<p class="lead">Embed image of campus map with parking lot and building location marked.</p>
-
-    <h3>Map for Liberty Square Parking</h3>
-    <div id="map"></div>
-<script>
-      function initMap() {
-        var uluru = {lat: 42.280014, lng: -83.742606};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm6iQsZjlR1raLBz3UA5B2UjPRB9CKh7U&callback=initMap">
-    </script>
-
+		<div class="row">
+			<div class="col-md-6 location">
+		      	<h2>Location</h2>
+		      	<p class="lead">QuasiCon 2018 will take place on Saturday, February 10, 2018 at the Rackham School of Graduate Studies located 915 E. Washington St on the University of Michigan campus.</p>
+				<h2>Parking</h2>
+				<p class="lead">We suggest that attendees park at the Liberty Square Parking Structure (510 E. Washington), a short walk to the Rackham Graduate Building (915 E. Washington Street). This lot charges a flat $3 exit fee for parking on Saturdays.</p>
+			</div>
+			<div class="col-md-6 location">
+			    <div id="map"></div>
+					<script>
+				      function initMap() {
+				        var uluru = {lat: 42.280014, lng: -83.742606};
+				        var map = new google.maps.Map(document.getElementById('map'), {
+				          zoom: 16,
+				          center: uluru
+				        });
+				        var marker = new google.maps.Marker({
+				          position: uluru,
+				          map: map
+				        });
+				      }
+				    </script>
+				    <script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm6iQsZjlR1raLBz3UA5B2UjPRB9CKh7U&callback=initMap">
+				    </script>
+				</div>
+		</div>
     </section>
 
     <!-- ******************************************************************************************************************************** -->
