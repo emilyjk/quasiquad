@@ -27,6 +27,8 @@ h3{
 }
 h4, .navbar{
 	font-size: 1.12em;
+	text-transform: none;
+	color: #6EC4DB;
 }
 h5{
 	font-size: .83em;
@@ -38,6 +40,7 @@ p.lead{
 	font-size: .95em;
 	font-weight: 400;
 }
+
 /*HEADER & NAV */
 header{
 	box-shadow: 0px 12px 30px 1px rgba(176, 179, 180, .75);
@@ -101,7 +104,8 @@ header{
 .navbar-custom .nav-item:hover .nav-link {
     color: #FFFEFC;
 }
-.navbar-custom .dropdown-menu { /*dropdown*/
+/*dropdown*/
+.navbar-custom .dropdown-menu {
     background-color: #121820;
 }
 .navbar-custom .dropdown-item {
@@ -112,12 +116,14 @@ header{
     color: #FFFEFC;
     background-color: rgba(235, 239, 241,.5);
 }
+/*toggler icon*/
 .toggler-custom.navbar-toggler {
     border-color: #FFFEFC;
 }
 .toggler-custom .navbar-toggler-icon {
   	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 254, 252, 0.7)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 /*FOOTER*/
 .footer{
 	margin-top: 3em;
@@ -135,22 +141,24 @@ header{
 	font-family: 'Open Sans', sans-serif;
 	color: #FFFEFC;
 }
-/* BODY*/
+
+/* BODYS*/
 .wrapper {
     min-height: 93%;
     margin-bottom: -3em;
     padding-bottom: 3em;
 }
-.col-md-6.index, .col-md-8.about, .col-md-12.speakers{
+.col-md-6.index, .col-md-12.about, .col-md-12.speakers, .col-md-6.location, .col-md-8.header{
 	margin-top: 3em;
 }
+/*homepage*/
 .col-md-6.index{
 	padding-right: 3em;
 	padding-bottom: 3em;
 	padding-left: 3em;
 	text-align: center;
 }
-.col-md-6.index p.lead{
+.col-md-6.index p.lead, .col-md-12.about {
 	padding-left: 2em;
 	padding-right: 2em;
 }
@@ -161,18 +169,29 @@ header{
 	height: 7em;
 	margin-bottom: 1em;
 }
+/*about*/
+.col-lg-4.about, .col-md-6.about, .col-sm-12.about{
+	padding-bottom: 2em;
+}
+/*speakers*/
+.circular-photo {
+	height: 12em;
+  	border-radius: 50%;
+}
+.row.keynote{
+	padding-bottom: 2em;
+	border-bottom: 1px solid;
+}
+.col-md-8.header{
+	padding-bottom: 2em;
+}
 
 #map {
         width: 100%;
         height: 400px;
         background-color: grey;
       }
-.dropdown:hover .dropdown-menu {
-display: block;
-}
-.row{
-	padding: .5em;
-}
+/*lightbox*/
 .ekko-lightbox-nav-overlay{
 	z-index:1;
 	position:absolute;
