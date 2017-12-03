@@ -141,8 +141,10 @@ header{
     margin-bottom: -3em;
     padding-bottom: 3em;
 }
-.col-md-6.index{
+.col-md-6.index, .col-md-8.about, .col-md-12.speakers{
 	margin-top: 3em;
+}
+.col-md-6.index{
 	padding-right: 3em;
 	padding-bottom: 3em;
 	padding-left: 3em;
@@ -158,10 +160,4 @@ header{
 .icon{
 	height: 7em;
 	margin-bottom: 1em;
-}
-.col-md-8.about{
-	margin-top: 3em;
-}
-.col-md-12.speakers{
-	margin-top: 3em;
 }
