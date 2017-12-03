@@ -1,7 +1,7 @@
 <!DOCTYPE html>	
 <html lang="en">
 <head>
-	<title>QuasiCon 2018</title>
+	<title>Schedule QuasiCon 2018</title>
 	<!-- Required meta tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,48 +9,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!--FONTS-->
     <script src="https://use.fontawesome.com/ae8a5e6f8a.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lora|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lato|Roboto|Oswald" rel="stylesheet">
 </head>
 <body>
+	<div class="wrapper">
 	<header>
 		<div class="header-img container-fluid">
 			<img class="header-logo" src="img/q-logo.png">
 			<h1 class="header-title">QuasiCon 2018</h1>
 			<div class="header-btn">
-				<a class="header-link" href="#">Register Now</a>
+				<a class="header-link" href="register.html">Register Now</a>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-custom">
 	      	<!--<a class="navbar-brand" href="#">QuasiCon 2018</a>-->
-	      	<button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	      	<button class="navbar-toggler toggler-custom mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 	        	<span class="navbar-toggler-icon"></span>
 	      	</button>
 	      	<div class="collapse navbar-collapse" id="navbarCollapse">
 	       	 	<ul class="navbar-nav mr-auto">
-	          		<li class="nav-item active">
-	            		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	          		<li class="nav-item">
+	            		<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 	          		</li>
 	          		<li class="nav-item">
-	            		<a class="nav-link" href="#">About</a>
+	            		<a class="nav-link" href="about.html">About</a>
 	          		</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown active">
 	        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Day Of</a>
 	        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          				<a class="dropdown-item" href="#">Schedule</a>
-	         				<a class="dropdown-item" href="#">Location</a>
+	          				<a class="dropdown-item" href="schedule.html">Schedule</a>
+	         				<a class="dropdown-item" href="location.html">Location</a>
 	         			</div>
 	     			</li>
 	          		<li class="nav-item">
-	            		<a class="nav-link" href="#">Speakers</a>
+	            		<a class="nav-link" href="speakers.html">Speakers</a>
 	          		</li>
 					<li class="nav-item dropdown">
 	        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
 	        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          				<a class="dropdown-item" href="#">Propose Session</a>
-	         				<a class="dropdown-item" href="#">Volunteer</a>
-	         				<a class="dropdown-item" href="#">Contact Us</a>
+	          				<a class="dropdown-item" href="session.html">Propose Session</a>
+	         				<a class="dropdown-item" href="volunteer.html">Volunteer</a>
+	         				<a class="dropdown-item" href="contact.html">Contact Us</a>
 	         			</div>
 	     			</li>
 	        	</ul>
@@ -68,11 +70,9 @@
 	<!-- ******************************************************************************************************************************** -->
 	<!-- ONLY CHANGE CODE BETWEEN BELOW THIS COMMENT. IF YOU ARE CHANGING ANYTHING IN HEADER OR FOOTER DO IT IN THE INDEX.HTML TEMPLATE FILE. -->
 	<!-- ******************************************************************************************************************************** -->
-
+	
 	<section role="main" class="main-content container">
-      	<div class="mt-3">
-        	<h1>Schedule</h1>
-      	</div>
+      	<h2>Schedule</h2>
       	<p class="lead">
       		<h2>9am-10am</h2>
 		</p>
@@ -104,15 +104,15 @@
 		Description of activities during the time block listed above.
 		</p>
     </section>
-
+	</div>
     <!-- ******************************************************************************************************************************** -->
     <!-- ONLY CHANGE CODE ABOVE THIS COMMENT. IF YOU ARE CHANGING ANYTHING IN HEADER OR FOOTER DO IT IN THE INDEX.HTML TEMPLATE FILE. -->
     <!-- ******************************************************************************************************************************** -->
 
     
-	<footer class="footer bg-light">
+	<footer class="footer">
     	<div class="container">
-    		<p>presented by the ALA and SAA Student Chapters at the University of Michigan &copy; 2017</p>
+    		<p>2017 &copy; ALA and SAA Student Chapters at the University of Michigan</p>
     	</div>
 	</footer>
 	<!-- Optional JavaScript -->
