@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px){
+	/*homepage*/
+	.col-md-6.index{
+		padding: 0;
+		text-align: center;
+		padding-bottom: 1.5em;
+		margin: 2em 2em 0;
+	}
+	.right-side.index{
+		margin-right: 2em;
+		margin-left: 2em;
+		padding-top: 2em;
+		border-top: 1px solid;
+		border-left: none;
+	}
+	/*location & schedule * session*/
+	.row.location, .col-md-12.schedule, .col-md-12.session{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	/*speakers*/
+	.circular-photo{
+		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		margin-bottom: 2em;
+	}
+	.speakers h2{
+		text-align:center;
+	}
+	.col-md-4.speakers, .col-md-8.speakers{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	/*volunteer*/
+	.col-md-8.volunteer{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	.col-md-4.volunteer{
+		margin-top: 1em;
+	}
+	.col-md-4.volunteer img{
+		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+	}
+	/*contact*/
+	.col-md-4.contact{
+		padding-right: 2em;
+		padding-left: 2em;
+	}
+	.contact p.lead, .contact.header h2{
+		text-align: center;
+	}
+	.col-md-4.contact img{
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (max-width: 406px){
+	.footer .container p{
+		font-size: .6em;
+		padding-top: 1.75em;
+	}
+}

@@ -1,0 +1,125 @@
+{% extends "templates/index.html" %}
+
+{% block content %}    
+
+	<!-- ******************************************************************************************************************************** -->
+	<!-- ONLY CHANGE CODE BETWEEN BELOW THIS COMMENT. IF YOU ARE CHANGING ANYTHING IN HEADER OR FOOTER DO IT IN THE INDEX.HTML TEMPLATE FILE. -->
+	<!-- ******************************************************************************************************************************** -->
+  <script type="text/javascript" src = "js/form.js"></script>
+  <section role="main" class="main-content container">
+    <div class="row">
+      <div class="col-md-12 session">
+    <h2> Propose Session Form </h2>
+   <form method="post" onsubmit="return checkForm();">
+  <fieldset>
+    <p>
+      <label>
+        First Name:
+        <input type="text" name="fname" id="fname">
+      </label>
+    </p>
+    <p class="errormsg" id="fnerror">Please enter your first name above</p>
+     <p>
+      <label>
+        Last Name:
+        <input type="text" name="lname" id="lname">
+      </label>
+    </p>
+    <p class="errormsg" id="lnerror">Please enter your last name above</p>
+    <p>
+      <label>
+        School Name:
+        <input type="text" name="sname" id="sname">
+      </label>
+      <span class="ie"> (i.e. University of Michigan, etc...)
+    </p>
+    <p class="errormsg" id="snerror">Please enter your school above</p>
+    <p>
+      <label>
+        Department Name:
+        <input type="text" name="dname" id="dname">
+      </label>
+      <span class="ie"> (i.e. School of Information, etc...)
+    </p>
+    <p class="errormsg" id="dnerror">Please enter your department above</p>
+    <p>
+      <label>
+        Email:
+        <input type="email" name="email" id="email">
+      </label>
+      </p>
+    <p>
+       The Type of Session:
+ 
+      <label>
+        <input type="radio" value="lightning" name="sess" id="lightning">
+        Lightning Talk
+      </label>
+      <label>
+        <input type="radio" value="demo" name="sess" id="demo">
+        Demonstration
+      </label>
+      <label>
+        <input type="radio" value="panel" name="sess" id="panel">
+        Panel
+      </label>
+      <label>
+        <input type="radio" value="poster" name="sess" id="poster">
+        Poster
+      </label>
+    <p class="errormsg" id="sesserror">Please select a session type</p>
+    
+    <p>
+      <label>
+        Title:
+        <input type="text" name="title" id="title">
+      </label>
+      
+    </p>
+    <p class="errormsg" id="titleerror">Please enter the title of your session</p>
+    
+    <p>
+      <label>
+        Session Description:
+        <br>
+        <textarea rows="5" cols="50" id="sess" name="sess"></textarea>
+      </label>
+      
+    </p>
+    <p class="errormsg" id="sesherror">Please enter a longer description of your session (at least 100 characters) </p>
+    
+    <p>
+       Your position:
+       <label>
+        <input type="radio" value="faculty" name="posi" id="faculty">
+        Faculty
+      </label>
+      <label>
+        <input type="radio" value="student" name="posi" id="student">
+        Student
+      </label>
+      <label>
+        <input type="radio" value="staff" name="posi" id="staff">
+        Staff
+      </label>
+      
+    <p class="errormsg" id="posierror">Please select your position</p>
+    <p>
+    
+
+
+  <input type="submit" value="Submit"> 
+      </fieldset>
+</form>
+</div>
+</div>
+</section>
+	
+
+
+
+    <!-- ******************************************************************************************************************************** -->
+    <!-- ONLY CHANGE CODE ABOVE THIS COMMENT. IF YOU ARE CHANGING ANYTHING IN HEADER OR FOOTER DO IT IN THE INDEX.HTML TEMPLATE FILE. -->
+    <!-- ******************************************************************************************************************************** -->
+
+   {% endblock %}
