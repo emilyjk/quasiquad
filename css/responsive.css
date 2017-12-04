@@ -21,9 +21,9 @@
 	/*speakers*/
 	.circular-photo{
 		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-bottom: 2em;
+    		margin-left: auto;
+    		margin-right: auto;
+    		margin-bottom: 2em;
 	}
 	.speakers h2{
 		text-align:center;
@@ -42,8 +42,8 @@
 	}
 	.col-md-4.volunteer img{
 		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
+    		margin-left: auto;
+    		margin-right: auto;
 	}
 	/*contact*/
 	.col-md-4.contact{
@@ -56,5 +56,11 @@
 	.col-md-4.contact img{
 		margin-top: 2em;
 		margin-bottom: 1em;
+	}
+}
+@media only screen and (max-width: 406px){
+	.footer .container p{
+		font-size: .6em;
+		padding-top: 1.75em;
 	}
 }
