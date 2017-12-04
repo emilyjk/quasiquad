@@ -115,6 +115,10 @@ header{
     color: #FFFEFC;
     background-color: rgba(102, 171, 140,.5);
 }
+.navbar-custom .dropdown-item.active {
+    color: #FFFEFC;
+    background-color: rgba(250, 124, 146,.5);
+}
 /*toggler icon*/
 .toggler-custom.navbar-toggler {
     border-color: #FFFEFC;
