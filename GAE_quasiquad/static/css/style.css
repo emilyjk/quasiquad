@@ -119,6 +119,9 @@ header{
     color: #FFFEFC;
     background-color: rgba(250, 124, 146,.5);
 }
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
 /*toggler icon*/
 .toggler-custom.navbar-toggler {
     border-color: #FFFEFC;
