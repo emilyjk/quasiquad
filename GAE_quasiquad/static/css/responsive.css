@@ -64,3 +64,8 @@
 		padding-top: 1.75em;
 	}
 }
+@media screen {
+  .sr-only {
+    display: none;
+  }
+}
