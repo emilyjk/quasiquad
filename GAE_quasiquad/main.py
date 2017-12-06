@@ -74,9 +74,9 @@ class SessionHandler(webapp2.RequestHandler):
     	titles = self.request.get('titles')
     	sessd = self.request.get('sessd')
     	posi = self.request.get('posi')
-    	writehome = open("Sessions.csv","a")
-    	writehome.write(fname +"," + lname +"," + sname +"," +dname +"," +email +"," +sess +"," +titles +"," +sessd +"," +posi)
-    	writehome.close()
+#     	writehome = open("Sessions.csv","a")
+#     	writehome.write(fname +"," + lname +"," + sname +"," +dname +"," +email +"," +sess +"," +titles +"," +sessd +"," +posi)
+#     	writehome.close()
     	title = "QuasiCon 2018 - Home"
     	template_vars={'title':title}
         template = JINJA_ENVIRONMENT.get_template('templates/index.html')
